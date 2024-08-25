@@ -37,12 +37,12 @@ To build the videos you can run:
  ffmpeg -i parabolicprofiles_python_fortran.mp4  -vf "fps=10,scale=1024:-1:flags=lanczos" -c:v gif parabolicprofiles_python_fortran.gif
 ```
 
-##Fluid flow with FORTRAN
+## Fluid flow with FORTRAN
 ![Demo of the fluid flow with FORTRAN](fluidflow_fortran.gif)
-##Fluid Flow with PYTHON
+## Fluid Flow with PYTHON
 ![Demo of the fluid flow with PYTHON](fluidflow_python.gif)
-##Comparision of velocity profiles at different distances
-![Comparision of Parabolic fluid flow](fluidflow_python.gif)
+## Comparision of velocity profiles at different distances
+![Comparision of Parabolic fluid flow](parabolicprofiles_python_fortran.gif)
 
 
 
