@@ -38,6 +38,8 @@ To build the videos you can run:
 ```
 
 
+![Demo of the fluid flow](fluidflow_fortran.gif)
+
 
 
 
