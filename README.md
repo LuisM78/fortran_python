@@ -27,8 +27,15 @@ To build the videos you can run:
  ffmpeg -framerate 10 -pattern_type glob -i 'frames/frame_*.png' -fps_mode vfr -c:v libx264 -pix_fmt yuv420p fluidflow_python.mp4
  ffmpeg -framerate 10 -pattern_type glob -i 'frames2/frame_*.png' -fps_mode vfr -c:v libx264 -pix_fmt yuv420p fluidflow_fortran.mp4
  ffmpeg -framerate 8 -pattern_type glob -i 'compareprofiles/frame_*.png' -fps_mode vfr -c:v libx264 -pix_fmt yuv420p parabolicprofiles_python_fortran.mp4
-```
+ ```
 
+ To make *.gif files do
+
+```
+ ffmpeg -i fluidflow_python.mp4 -vf "fps=10,scale=1024:-1:flags=lanczos" -c:v gif fluidflow_python.gif
+ ffmpeg -i fluidflow_fortran.mp4 -vf "fps=10,scale=1024:-1:flags=lanczos" -c:v gif fluidflow_fortran.gif
+ ffmpeg -i parabolicprofiles_python_fortran.mp4  -vf "fps=10,scale=1024:-1:flags=lanczos" -c:v gif parabolicprofiles_python_fortran.gif
+```
 
 
 
