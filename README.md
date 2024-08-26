@@ -13,6 +13,10 @@ Then, run the simulation with:
 
 While it runs, it will dump the u and v data into the results folder in the current working directory.
 
+To generate the respective visualizations for the fluid flow for the FORTRAN simulation, run.
+
+```python readfortrandata.py```
+
 To obtain the results using Python, run:
 
 ```python pipeflow7.py```
