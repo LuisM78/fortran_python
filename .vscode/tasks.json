@@ -1,0 +1,26 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "Fortran: gfortran build active file",
+            "command": "C:\\Windows\\System32\\wsl.exe",
+            "args": [
+                "bash",
+                "-c",
+                "gfortran -fdiagnostics-color=always -g /mnt/c/Users/luism/OneDrive/Documentos/FORTRAN_PYTHON/${fileBasename} -o /mnt/c/Users/luism/OneDrive/Documentos/FORTRAN_PYTHON/${fileBasenameNoExtension}"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Compile Fortran code using gfortran in WSL"
+        }
+    ]
+}
